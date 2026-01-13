@@ -17,6 +17,9 @@ test.beforeEach(async({page})=>{
     
 });
 
+//checkout flow
+
+
 test.describe('Checkout Flow Test',()=>{
 
     test('Verify Checkout Information with valid data',async({page})=>{
