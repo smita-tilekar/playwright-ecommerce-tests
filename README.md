@@ -92,7 +92,7 @@ Playwright generates an HTML report after each run using `npx playwright show-re
 - Node.js
 - JSON-based test data
 
-## 👩‍💻 About Harshada Patil — QA Engineer | Engineering in Computer Science
+## 👩‍💻 About Smita Tilekar — QA Engineer | Engineering in Computer Science
 
 
 ## ⚠️ Disclaimer
