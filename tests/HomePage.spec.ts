@@ -1,4 +1,4 @@
-import { LoginPage} from "../pages/loginPage";
+import { LoginPage} from "../pages/LoginPage";
 import { HomePage } from "../pages/HomePage";
 import { test, expect } from "@playwright/test";
 import { appConfig } from "../utils/config";

@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-import{LoginPage} from '../pages/loginPage';
+import{LoginPage} from '../pages/LoginPage';
 import {HomePage} from '../pages/HomePage';  // syntax to return module
 import userLoginData from '../testdata/users.json'; // syntax to import json file
 import {appConfig} from '../utils/config';

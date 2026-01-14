@@ -1,6 +1,6 @@
 import{test,expect}from'@playwright/test';
 import { appConfig } from '../utils/config';
-import { LoginPage } from '../pages/loginPage';
+import { LoginPage } from '../pages/LoginPage';
 import { CartPage } from '../pages/CartPage';  
 import { HomePage } from '../pages/HomePage';
 import { CheckoutPage } from '../pages/CheckoutPage';
