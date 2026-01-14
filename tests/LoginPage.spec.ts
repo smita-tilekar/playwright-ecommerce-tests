@@ -33,7 +33,7 @@ test.describe('Login Page Test-Data Driven Tests', ()=>{
         {
 
             console.log('Unsuccessful login :',user.username);
-            await loginPage.login(user.username,user.password);
+            await loginPage.loginExpectFailure(user.username,user.password);
             const errorMsg=await loginPage.getErrorMessage();
             expect(errorMsg).toBe(user.errorMessage);
         }

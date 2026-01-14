@@ -28,6 +28,7 @@ export class CartPage extends BasePage{
     async goToCheckout(): Promise<CheckoutPage>
     {
 
+       await this.shoppingCartLink.click();
        await this.checkoutButton.click();
        return new CheckoutPage(this.page);
     }

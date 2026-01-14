@@ -22,9 +22,9 @@ test.describe("Home Page Test", () => {
 
     test("Sort items by Price Low to High", async ({ page }) => {
         await homePage.sortItems('lohi');
-        const firstItemPrice=await homePage.getAllItemPrices();
-        expect(firstItemPrice).toBe('$7.99');
-        expect(firstItemPrice).toEqual([...firstItemPrice].sort((a, b) => a - b));
+        const prices = await homePage.getAllItemPrices();
+        expect(prices[0]).toBe(7.99);
+        expect([...prices].sort((a, b) => a - b)).toEqual(prices);
 
         
 
@@ -32,8 +32,9 @@ test.describe("Home Page Test", () => {
     test("Sort items by Price High to Low", async ({ page }) => {
 
         await homePage.sortItems('hilo');
-        const firstItemPrice=await homePage.getAllItemPrices();
-        expect(firstItemPrice).toBe('$49.99');  
+        const prices = await homePage.getAllItemPrices();
+        expect(prices[0]).toBe(49.99);  
+        expect([...prices].sort((a, b) => b - a)).toEqual(prices);
 
     });
 

@@ -20,7 +20,14 @@ export class LoginPage extends BasePage{
         
     }
 
-    //check for error message when login fails
+    async loginExpectFailure(username: string, password: string): Promise<void>
+    {
+        await this.usernameInput.fill(username);
+        await this.passwordInput.fill(password);
+        await this.loginButton.click();
+    }
+
+    //check for error message when login fails state
 
     async getErrorMessage(): Promise<string>
     {
@@ -30,7 +37,7 @@ export class LoginPage extends BasePage{
     }
 
     // verify home page is loaded after login
-
+//async function
     async verifyLoginSuccess(): Promise<string>
     {
 
